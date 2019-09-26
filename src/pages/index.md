@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: Jeans Blog
+image: /img/home1.jpg
+heading: BLAHHHHHHHHHH heading home
+subheading: Hope this subheading works well
 mainpitch:
-  title: Why Kaldi
+  title: Why Jean wants to make this shit?
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
