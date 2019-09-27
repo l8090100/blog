@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import facebook from '../img/social/facebook.svg'
+import logo from '../img/logo2.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -38,6 +39,7 @@ const Navbar = class extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
+        fixed="top"
       >
         <div className="container">
           <div className="navbar-brand">
@@ -85,6 +87,16 @@ const Navbar = class extends React.Component {
               >
                 <span className="icon">
                   <img src={github} alt="Github" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="facebook.com/chengchingen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={facebook} alt="Facebook" />
                 </span>
               </a>
             </div>
