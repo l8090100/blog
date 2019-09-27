@@ -37,7 +37,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent " //加上is-fixed-top才能固定nav在頂部
+        className="navbar is-transparent is-fixed-top " //加上is-fixed-top才能固定nav在頂部
         role="navigation"
         aria-label="main-navigation"
       >
@@ -47,7 +47,7 @@ const Navbar = class extends React.Component {
               <img src={logo} alt="HOME" style={{ width: '300px' }} />
             </Link>
             {/* Hamburger menu */}
-            <div
+            {/* <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
@@ -55,16 +55,13 @@ const Navbar = class extends React.Component {
               <span />
               <span />
               <span />
-            </div>
+            </div> */}
           </div>
           <div
             id="navMenu"
             className={`navbar-menu is-size-5 ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
               <Link className="navbar-item" to="/products">
                 Products
               </Link>
@@ -73,12 +70,6 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/tags">
                 Tag
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
