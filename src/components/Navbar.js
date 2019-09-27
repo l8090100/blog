@@ -37,14 +37,14 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent is-fixed-top "
+        className="navbar is-transparent is-fixed-top " //加上is-fixed-top才能固定nav在頂部
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="HOME" style={{ width: '88px' }} />
+              <img src={logo} alt="HOME" style={{ width: '300px' }} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -59,9 +59,9 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`navbar-menu is-size-5 ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-start">
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -70,6 +70,9 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
+              </Link>
+              <Link className="navbar-item" to="/tags">
+                Tag
               </Link>
               <Link className="navbar-item" to="/contact">
                 Contact

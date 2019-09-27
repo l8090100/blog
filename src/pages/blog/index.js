@@ -8,19 +8,19 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div
-          className="full-width-image-container margin-top-0"
+          className="full-width-image-container margin-top-2"
           style={{
             backgroundImage: `url('/img/blog1.jpg')`,
           }}
         >
           <h1
-            className="has-text-weight-bold is-size-1"
+            className="has-text-weight-bold is-size-2"
             style={{
               color: 'white',
               padding: '1rem',
             }}
           >
-            Latest Stories
+            Recent post
           </h1>
         </div>
         <section className="section">
