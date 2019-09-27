@@ -37,7 +37,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent is-fixed-top " //加上is-fixed-top才能固定nav在頂部
+        className="navbar is-transparent " //加上is-fixed-top才能固定nav在頂部
         role="navigation"
         aria-label="main-navigation"
       >
