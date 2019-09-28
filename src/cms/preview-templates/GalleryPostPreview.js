@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { GalleryPostTemplate } from '../../templates/Gallery-post'
+import { GalleryPostTemplate } from '../../templates/gallery-post'
 
 const GalleryPostPreview = ({ entry, widgetFor }) => (
   <GalleryPostTemplate
