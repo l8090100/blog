@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Title = styled.span`
   display: block;
-  font-size: 2rem;
-  font-weight: 500;
-  font-color: red;
-  margin: 2rem 2rem 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: bottom;
+  margin: 1rem 0rem 1rem;
 `;

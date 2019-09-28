@@ -15,13 +15,13 @@ export const PaintingPageTemplate = ({
       <section className="section">
         <div style={{ marginTop: `4rem` }}>
           <div className="container">
-            <div className="columns">
-                <div className="column is-7 is-offset-1 ">
+            <div className="columns has-text-centered">
+                <div className="column is-12  ">
                   <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
                   <p>{description}</p>
                 </div>
             </div>
-            <div className="columns is-multiline is-mobile has-text-centered">
+            <div className="columns is-mobile has-text-centered">
               <div className="column has-text-centered">
                     <Gallery items={intro.blurbs} />
               </div>     
@@ -90,7 +90,7 @@ export const PaintingPageQuery = graphql`
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 240, maxHeight: 240, quality: 64) {
+                fluid(maxWidth: 400,  quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

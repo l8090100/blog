@@ -4,7 +4,7 @@ import Item from '../gallery/item/item'
 import { Container } from '../gallery/gallery.css'
 
 const Gallery = ({ items }) => (
-  <Container>
+  <Container >
     {items.map((item, i) => (
       <Item {...item} key={i} />
     ))}

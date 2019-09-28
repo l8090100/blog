@@ -1,18 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import { Link } from 'gatsby'
-import { Title } from './item.css';
+// import { Link } from 'gatsby'
+// import { Title } from './item.css';
 
 const Item = ({ title, image }) => (
+
   <figure>
-     <Link to={`/${title}/`}>
+     {/* <Link to={`/${title}/`}> */}
+     
     <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
-    </Link>
+    {/* </Link> */}
     <figcaption>
-      <Title>{title}</Title>
+      {/* <Title>{title}</Title> */}
     </figcaption>
   </figure>
+
+
 );
 
 Item.propTypes = {

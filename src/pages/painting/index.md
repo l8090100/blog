@@ -13,16 +13,16 @@ intro:
   blurbs:
     - image: /img/home1.jpg
       title: 
-        "painting" 
+        painting
     - image: /img/jungo.jpg
       title: 
         cooking
     - image: /img/home1.jpg
       title: 
-        photograph
+        photo
     - image: /img/home1.jpg
       title: 
-        We believe that good coffee has the power to bring 
+        please 
     - image: /img/home1.jpg
       title: painting
     - image: /img/jungo.jpg
@@ -30,8 +30,8 @@ intro:
         cooking
     - image: /img/home1.jpg
       title: 
-        photograph
+        photo
     - image: /img/home1.jpg
       title: 
-        We believe that good coffee has the power to bring 
+        please 
   
