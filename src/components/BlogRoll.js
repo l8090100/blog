@@ -9,16 +9,17 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-multiline is-mobile">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div className="is-parent column is-one-third" key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification ${
+              // remove "is-child notification" in classname
+                className={`blog-list-item box ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
-                <header>
+
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
@@ -29,19 +30,15 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
+                  <br />
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="title has-text-primary is-size-5"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-6 is-block">
-                      {post.frontmatter.date}
-                    </span>
+                    </Link>             
                   </p>
-                </header>
                 <p>
                   {post.frontmatter.description}
                   <br />
@@ -49,6 +46,9 @@ class BlogRoll extends React.Component {
                   {/* <Link className="button " to={post.fields.slug}>
                     More →
                   </Link> */}
+                  <span className="subtitle is-size-6 is-block">
+                      {post.frontmatter.date}
+                  </span>
                 </p>
               </article>
             </div>
@@ -89,7 +89,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 240, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

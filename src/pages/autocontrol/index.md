@@ -1,7 +1,7 @@
 ---
 templateKey: 'gallery-page'
 path: /gallery
-title: gallery show
+title: Art Work
 image: /img/jungo.jpg
 heading: All the artwork is sharing here
 description: >-
@@ -12,16 +12,26 @@ description: >-
 intro:
   blurbs:
     - image: /img/home1.jpg
-      title: autocontrol
+      title: 
+        gallery
     - image: /img/jungo.jpg
-      title: side project
+      title: 
+        cooking
     - image: /img/home1.jpg
-      title: coding 
+      title: 
+        photo
     - image: /img/home1.jpg
-      title: poem
+      title: 
+        please 
+    - image: /img/home1.jpg
+      title: gallery
     - image: /img/jungo.jpg
-      title: cooking
+      title: 
+        cooking
     - image: /img/home1.jpg
-      title: artwork
-
+      title: 
+        photo
+    - image: /img/home1.jpg
+      title: 
+        please 
   

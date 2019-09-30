@@ -2,18 +2,29 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 
-class TagRoute extends React.Component {
+class TagCardRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
       <div className="column is-full" >
+        <article className={`blog-list-item box `}>
+        <div className="featured-thumbnail">
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: post.node.frontmatter.featuredimage,
+              alt: `featured image thumbnail for post ${post.node.frontmatter.title}`,
+            }}
+          />
+        </div>
         <li key={post.node.fields.slug}>
           <Link to={post.node.fields.slug}>
             <p className="is-size-5">{post.node.frontmatter.title}</p>
           </Link>
         </li>
+        </article>
       </div>
     ))
     const tag = this.props.pageContext.tag
@@ -49,10 +60,10 @@ class TagRoute extends React.Component {
   }
 }
 
-export default TagRoute
+export default TagCardRoute
 
-export const tagPageQuery = graphql`
-  query TagPage($tag: String) {
+export const tagCardPageQuery = graphql`
+  query TagCardPage($tag: String) {
     site {
       siteMetadata {
         title
@@ -71,6 +82,13 @@ export const tagPageQuery = graphql`
           }
           frontmatter {
             title
+            featuredimage {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { PaintingPageTemplate } from '../../templates/painting-page'
+import { GalleryPageTemplate } from '../../templates/gallery-page'
 
-const PaintingPagePreview = ({ entry, getAsset }) => {
+const GalleryPagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 
@@ -13,7 +13,7 @@ const PaintingPagePreview = ({ entry, getAsset }) => {
   const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : []
 
   return (
-    <PaintingPageTemplate
+    <GalleryPageTemplate
       image={entry.getIn(['data', 'image'])}
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
@@ -46,11 +46,11 @@ const PaintingPagePreview = ({ entry, getAsset }) => {
   )
 }
 
-PaintingPagePreview.propTypes = {
+GalleryPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
 }
 
-export default PaintingPagePreview
+export default GalleryPagePreview

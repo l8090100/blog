@@ -1,19 +1,16 @@
 ---
-templateKey: 'painting-page'
-path: /painting
-title: Art Work
+templateKey: 'gallery-page'
+path: /cooking
+title: brown rice
 image: /img/jungo.jpg
-heading: All the artwork is sharing here
+heading:  all the recipes
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  all the recipes would recorded here
 intro:
   blurbs:
     - image: /img/home1.jpg
       title: 
-        painting
+        gallery
     - image: /img/jungo.jpg
       title: 
         cooking
@@ -24,7 +21,7 @@ intro:
       title: 
         please 
     - image: /img/home1.jpg
-      title: painting
+      title: gallery
     - image: /img/jungo.jpg
       title: 
         cooking

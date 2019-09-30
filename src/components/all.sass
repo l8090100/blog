@@ -12,6 +12,7 @@ $black: #2b2523
 
 .navbar .navbar-menu
   box-shadow:none !important
+  height: 80px
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -73,14 +74,17 @@ $black: #2b2523
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
-  width: 5rem
-  height: 5rem
+  width: 10rem
+  height: 10rem
   fill: currentColor
 .navbar-brand .navbar-item.logo
+  width: 10rem
+  height: 10rem
   padding: 0 1rem
 footer.footer
   padding: 0rem 0rem 0rem
   background-color: transparent
+
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -93,7 +97,7 @@ $menu-label-color: $white-ter
 
 
 .menu-label
-  font-size: 1em !important
+  font-size: 2em !important
   text-align: center
 .menu-list
   list-style: none !important
@@ -112,13 +116,13 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 0em
 .blog-list-item .featured-thumbnail
-  flex-basis: 55%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 100%
+  margin: 0 0 0 0
 
 
 // gallery roll
@@ -128,7 +132,7 @@ $menu-label-color: $white-ter
   display: flex;
   margin-bottom: 0em;
 .gallery-list-item .featured-thumbnail
-  flex-basis: 100%;
+  flex-basis: 80%;
   margin: 0 0 0 0;
 
 

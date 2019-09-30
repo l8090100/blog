@@ -3,6 +3,7 @@ templateKey: 'blog-post'
 title: 'Theatransforemer 募資計畫 01'
 date: 2019-09-23
 featuredpost: true
+featuredimage: /img/jungo.jpg
 description: >-
   整理PLC教具專案的建置過程。
 tags:

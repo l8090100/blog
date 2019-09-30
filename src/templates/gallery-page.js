@@ -5,7 +5,8 @@ import Layout from '../components/Layout'
 import Gallery from '../components/gallery/gallery'
 
 
-export const PaintingPageTemplate = ({
+
+export const GalleryPageTemplate = ({
   title,
   heading,
   description,
@@ -32,7 +33,7 @@ export const PaintingPageTemplate = ({
     );
   }
 
-PaintingPageTemplate.propTypes = {
+GalleryPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -44,12 +45,12 @@ PaintingPageTemplate.propTypes = {
 
 }
 
-const PaintingPage = ({ data }) => {
+const GalleryPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <PaintingPageTemplate
+      <GalleryPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -61,7 +62,7 @@ const PaintingPage = ({ data }) => {
   )
 }
 
-PaintingPage.propTypes = {
+GalleryPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -69,10 +70,10 @@ PaintingPage.propTypes = {
   }),
 }
 
-export default PaintingPage
+export default GalleryPage
 
-export const PaintingPageQuery = graphql`
-  query PaintingPage($id: String!) {
+export const GalleryPageQuery = graphql`
+  query GalleryPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

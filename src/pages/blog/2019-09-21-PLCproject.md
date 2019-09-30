@@ -3,6 +3,7 @@ templateKey: 'blog-post'
 title: 'PLC project 01'
 date: 2019-09-21
 featuredpost: false
+featuredimage: /img/jungo.jpg
 description: >-
   整理PLC教具專案的建置過程。
 tags:

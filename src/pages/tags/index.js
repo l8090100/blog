@@ -19,10 +19,10 @@ const TagsPage = ({
         <div className="columns">
           <div
             className="column is-10 is-offset-1"
-            style={{ marginBottom: '10rem' }}
+            style={{ marginBottom: '5rem' }}
           >
-            <h1 className="title is-size-2 is-bold-light has-text-centered">Tags</h1>
-            <ul className="taglist">
+            <div style={{ marginTop: `5rem` }}></div>
+            <ul className="taglist is-size-4">
               {group.map(tag => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
@@ -32,6 +32,7 @@ const TagsPage = ({
               ))}
             </ul>
           </div>
+          <div style={{ marginBottom: '27rem' }}></div>
         </div>
       </div>
     </section>

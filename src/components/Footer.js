@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-modal-routing'
 
 
 const Footer = class extends React.Component {
@@ -13,36 +13,24 @@ const Footer = class extends React.Component {
             style={{ width: '14em', height: '3em' }}
           />
         </div> */}
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-1">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
+          <div className="container has-text-centered has-background-black has-text-white-ter">
+            <div className="columns has-text-centered is-multiline">
+              <div className="column is-2 ">
+              <ul className="menu-list">
+                      <Link className="navbar-item" to="/contact">
+                        contact
+                      </Link>   
                       <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
+                        upload
+                      </Link> 
+                      </ul>             
               </div>
-              <div className="column is-1">
+              <div className="column is-auto ">
+                <br/>
+                      <p>l8090100@gmail.com </p> 
+                      <br/>
+              </div>
+              {/* <div className="column is-1">
                 <section>
                   <ul className="menu-list">
                     <li>
@@ -55,19 +43,9 @@ const Footer = class extends React.Component {
                         Admin
                       </a>
                     </li>
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
                   </ul>
                 </section>
-              </div>
+              </div> */}
               {/* <div className="column is-4 social">
                 <a title="facebook" href="https://facebook.com">
                   <img
@@ -79,7 +57,6 @@ const Footer = class extends React.Component {
               </div> */}
             </div>
           </div>
-        </div>
       </footer>
     )
   }

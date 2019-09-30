@@ -2,6 +2,7 @@
 templateKey: 'about-page'
 path: /about
 title: About Jean
+image: /img/home1.jpg
 ---
 ### Education
 

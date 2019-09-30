@@ -3,6 +3,7 @@ templateKey: 'blog-post'
 title: 'Gatsby blog tutorial 01'
 date: 2019-09-27
 featuredpost: true
+featuredimage: /img/jungo.jpg
 description: >-
   here is the guide how I use Gatsby + Netlify + VScode to make this blog, its a series.
 tags:
