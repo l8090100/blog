@@ -14,25 +14,25 @@ const Navbar = class extends React.Component {
     }
   }
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
+  // toggleHamburger = () => {
+  //   // toggle the active boolean in the state
+  //   this.setState(
+  //     {
+  //       active: !this.state.active,
+  //     },
+  //     // after state has been updated,
+  //     () => {
+  //       // set the class in state for the navbar accordingly
+  //       this.state.active
+  //         ? this.setState({
+  //             navBarActiveClass: 'is-active',
+  //           })
+  //         : this.setState({
+  //             navBarActiveClass: '',
+  //           })
+  //     }
+  //   )
+  // }
 
   render() {
     return (
@@ -41,28 +41,12 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Bulma" width="112" height="128" />
+              <img src={logo} alt="Bulma" width="50px" height="100px" />
             </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu is-size-5 has-text-centered ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start ">
-              <Link className="navbar-item" to="/gallery">
+            <Link className="navbar-item" to="/gallery">
                 Gallery
               </Link>
               <Link className="navbar-item" to="/blog">
@@ -71,31 +55,19 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/tags">
                 Tag
               </Link>
+            {/* Hamburger menu */}
+            {/* <div
+              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              data-target="navMenu"
+              onClick={() => this.toggleHamburger()}
+            > */}
+              {/* <span />
+              <span />
+              <span /> */}
             </div>
-            <div className="navbar-end">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-              <a
-                className="navbar-item"
-                href="facebook.com/chengchingen"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={facebook} alt="Facebook" />
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
+          {/* </div> */}
+          
+        {/* </div> */}
       </nav>
     )
   }

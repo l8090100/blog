@@ -46,6 +46,7 @@ export default class Contact extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
+            <div style={{ marginTop: `4rem` }}> </div>
               <h1>File Upload</h1>
               <form
                 name="file-upload"

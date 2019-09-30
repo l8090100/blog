@@ -39,6 +39,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
+            <div style={{ marginTop: `4rem` }}> </div>
               <h1>Contact</h1>
               <form
                 name="contact"

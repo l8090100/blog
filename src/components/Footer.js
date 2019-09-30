@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby-plugin-modal-routing'
-
+import facebook from '../img/social/facebook.svg'
+import github from '../img/github-icon.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -16,17 +17,34 @@ const Footer = class extends React.Component {
           <div className="container has-text-centered has-background-black has-text-white-ter">
             <div className="columns has-text-centered is-multiline">
               <div className="column is-2 ">
-              <ul className="menu-list">
-                      <Link className="navbar-item" to="/contact">
-                        contact
-                      </Link>   
-                      <Link className="navbar-item" to="/contact/examples">
-                        upload
+                      <Link to="/contact">
+                        Contact
+                      </Link>
+              </div>   
+              <div className="column is-2 ">
+                      <Link  to="/contact/file-upload/">
+                        Upload
                       </Link> 
-                      </ul>             
-              </div>
+                      </div>
+                      <div className="column is-2 ">
+                      <a title="facebook" href="https://facebook.com">
+                        <img
+                          src={facebook}
+                          alt="Facebook"
+                          style={{ width: '2em', height: '2em' }}
+                        />
+                      </a>
+                      </div>
+                      <div className="column is-2 ">
+                      <a title="github" href="https://facebook.com">
+                        <img
+                          src={github}
+                          alt="github"
+                          style={{ width: '2em', height: '2em' }}
+                        />
+                      </a>   
+                      </div>         
               <div className="column is-auto ">
-                <br/>
                       <p>l8090100@gmail.com </p> 
                       <br/>
               </div>
@@ -45,12 +63,19 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
-              </div> */}
+              </div> */} 
               {/* <div className="column is-4 social">
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
                     alt="Facebook"
+                    style={{ width: '1em', height: '1em' }}
+                  />
+                </a>
+                <a title="github" href="https://facebook.com">
+                  <img
+                    src={github}
+                    alt="github"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
