@@ -8,13 +8,10 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div style={{ marginTop: `4rem` }}>
-
         </div>
         <section className="section">
-          <div className="container">
-            <div className="content">
-              <BlogRoll />
-            </div>
+           <div className="container">
+            <BlogRoll />          
           </div>
         </section>
       </Layout>

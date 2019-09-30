@@ -9,17 +9,10 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline is-mobile">
+      <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-one-third" key={post.id}>
-              <article
-              // remove "is-child notification" in classname
-                className={`blog-list-item box ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-
+            <div className="column is-4" key={post.id}>
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
@@ -39,18 +32,16 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.title}
                     </Link>             
                   </p>
+                  <div style={{ marginTop: `1rem` }}></div>
                 <p>
                   {post.frontmatter.description}
                   <br />
                   <br />
-                  {/* <Link className="button " to={post.fields.slug}>
-                    More →
-                  </Link> */}
-                  <span className="subtitle is-size-6 is-block">
+                  {/* <span className="subtitle is-size-6 is-block">
                       {post.frontmatter.date}
                   </span>
+                  <br /> */}
                 </p>
-              </article>
             </div>
           ))}
       </div>
@@ -89,7 +80,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 240, quality: 100) {
+                    fluid(maxWidth: 300, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
