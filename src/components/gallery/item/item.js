@@ -7,8 +7,8 @@ import { Link } from 'gatsby'
 import { Title } from './item.css';
 
 const Item = ({ title, image }) => (
+<div className="column is-4">
 
-  <figure>
     {/* <Link to={`/tags-card/${kebabCase(title)}/`} asModal>   */}
     <Link to={`/tags-card/${kebabCase(title)}/`}>      
       <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
@@ -16,8 +16,8 @@ const Item = ({ title, image }) => (
     <figcaption>
       <Title>{title}</Title>
     </figcaption>
-  </figure>
 
+</div>
 
 );
 

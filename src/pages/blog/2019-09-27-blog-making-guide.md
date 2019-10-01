@@ -10,7 +10,7 @@ tags:
   - Web development
   - Programming
 ---
-
+![chemex](/img/chemex.jpg)
 
 ## 環境設定
 - 安裝VScode

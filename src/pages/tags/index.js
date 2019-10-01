@@ -22,7 +22,7 @@ const TagsPage = ({
             style={{ marginBottom: '5rem' }}
           >
             <div style={{ marginTop: `5rem` }}></div>
-            <ul className="taglist is-size-4">
+            <ul className="taglist is-size-5">
               {group.map(tag => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>

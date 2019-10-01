@@ -3,7 +3,7 @@ templateKey: 'blog-post'
 title: 'PLC project 01'
 date: 2019-09-21
 featuredpost: false
-featuredimage: /img/jungo.jpg
+featuredimage: /img/flavor_wheel.jpg
 description: >-
   整理PLC教具專案的建置過程。
 tags:
@@ -11,6 +11,7 @@ tags:
   - Auto Control
   - Modbus
 ---
+![chemex](/img/chemex.jpg)
 
 # PLC教具專案
 ***

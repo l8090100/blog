@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby-plugin-modal-routing'
 import facebook from '../img/social/facebook.svg'
 import github from '../img/github-icon.svg'
+import contact from '../img/contact-icon.svg'
+import uploadfile from '../img/uploadfile-icon.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -15,36 +17,38 @@ const Footer = class extends React.Component {
           />
         </div> */}
           <div className="container has-text-centered has-background-black has-text-white-ter">
-            <div className="columns has-text-centered is-multiline">
-              <div className="column is-2 ">
+            <div className="columns is-multiline is-mobile">
+              <div className="column is-12 ">
                       <Link to="/contact">
-                        Contact
+                      <img
+                          src={contact}
+                          alt="contact"
+                          style={{ width: '4em', height: '2em' }}
+                        />
                       </Link>
-              </div>   
-              <div className="column is-2 ">
                       <Link  to="/contact/file-upload/">
-                        Upload
+                      <img
+                          src={uploadfile}
+                          alt="uploadfile"
+                          style={{ width: '4em', height: '2em' }}
+                        />
                       </Link> 
-                      </div>
-                      <div className="column is-2 ">
-                      <a title="facebook" href="https://facebook.com">
+                      <a title="facebook" href="https://facebook.com/chengchingen">
                         <img
                           src={facebook}
                           alt="Facebook"
-                          style={{ width: '2em', height: '2em' }}
+                          style={{ width: '4em', height: '2em' }}
                         />
                       </a>
-                      </div>
-                      <div className="column is-2 ">
-                      <a title="github" href="https://facebook.com">
+                      <a title="github" href="https://github.com/l8090100">
                         <img
                           src={github}
                           alt="github"
-                          style={{ width: '2em', height: '2em' }}
+                          style={{ width: '4em', height: '2em' }}
                         />
                       </a>   
-                      </div>         
-              <div className="column is-auto ">
+              </div>   
+              <div className="column is-12 ">
                       <p>l8090100@gmail.com </p> 
                       <br/>
               </div>
