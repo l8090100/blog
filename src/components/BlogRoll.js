@@ -10,13 +10,14 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-multiline ">
         {posts &&
           posts.map(({ node: post }) => (
             <div className="column is-4" key={post.id}>
+              <article className={`blog-list-item box `}>
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary  margin-top-2 is-size-5"
+                      className="title has-text-primary  is-size-5"
                       to={post.fields.slug} asModal
                     >
                       {post.frontmatter.featuredimage ? (
@@ -29,20 +30,26 @@ class BlogRoll extends React.Component {
                           />
                         </div>
                       ) : null}
-                        <br />
-                      {post.frontmatter.title}
-                    </Link>             
+                      </Link> 
+                      
                   </p>
-                  <div style={{ marginTop: `1rem` }}></div>
-                <p>
+                  <div style={{ marginTop: `0.5rem` }}></div>
+                  <div className="container">    
+                      <div className="columns  is-mobile">
+                        <div className="column is-10 is-mobile">
+                          <Link className="title has-text-primary  is-size-5" to={post.fields.slug} asModal>
+                          <p class="bd-notification is-primary">{post.frontmatter.title}</p>
+                          </Link> 
+                        </div>
+                        <div className="column  is-mobile">                 
+                        {post.frontmatter.date}
+                        </div>
+                      </div>   
+                  </div>
+                  <div style={{ marginTop: `0.4rem` }}></div>
                   {post.frontmatter.description}
-                  <br />
-                  <br />
-                  {/* <span className="subtitle is-size-6 is-block">
-                      {post.frontmatter.date}
-                  </span>
-                  <br /> */}
-                </p>
+                 
+                </article>
             </div>
           ))}
       </div>
@@ -77,7 +84,7 @@ export default () => (
                 title
                 templateKey
                 description
-                date(formatString: "MM.DD, YYYY")
+                date(formatString: "DD.MM")
                 featuredpost
                 featuredimage {
                   childImageSharp {

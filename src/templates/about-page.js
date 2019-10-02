@@ -14,30 +14,31 @@ export const AboutPageTemplate = ({ image,title, content, contentComponent }) =>
   return (
     <div>
     <div
-      className="full-width-image margin-top-0"
+      className="full-width-image margin-top-"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top center`,
+        backgroundPosition: `center`,
         backgroundAttachment: `flex`,
       }}
     >
       <div
         style={{
           display: 'flex',
-          height: '100px',
-          lineHeight: '1',
+          height: '120px',
+          lineHeight: '3',
           justifyContent: 'space-around',
           alignItems: 'center',
           flexDirection: 'column',
         }}
       >
+        <div style={{ marginTop: `2rem` }}></div>
         <h1
           className="has-text-centered is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            color: 'black',
-            lineHeight: '2',
+            color: 'white',
+            lineHeight: '3',
             padding: '0.2em',
           }}
         >
@@ -83,9 +84,7 @@ export const AboutPageTemplate = ({ image,title, content, contentComponent }) =>
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">
                 About Me
               </h2>
-              <h3 className=" has-text-centered is-size-4-mobile is-size-4-tablet is-size-4-widescreen">
-              l8090100@gmail.com
-              </h3>
+
               <PageContent className="content" content={content} />
             </div>
           </div>

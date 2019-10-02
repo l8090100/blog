@@ -16,13 +16,13 @@ export const GalleryPageTemplate = ({
       <section className="section">
         <div style={{ marginTop: `4rem` }}>
           <div className="container">
-            <div className="columns has-text-centered">
+            {/* <div className="columns has-text-centered">
                 <div className="column is-12  ">
                   <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
                   <div style={{ marginTop: `1rem` }}></div>
                   <p>{description}</p>
                 </div>
-            </div>
+            </div> */}
             <div className="columns is-mobile has-text-centered">
               <div className="column has-text-centered">
                     <Gallery items={intro.blurbs} />

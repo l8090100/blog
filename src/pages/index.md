@@ -2,7 +2,7 @@
 templateKey: 'about-page'
 path: /about
 title: Cheng Ching En
-image: /img/blog1.jpg
+image: /img/about.jpg
 ---
 ### Education
 
