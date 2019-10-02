@@ -41,8 +41,6 @@ GalleryPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-
 }
 
 const GalleryPage = ({ data }) => {
@@ -56,7 +54,6 @@ const GalleryPage = ({ data }) => {
         heading={frontmatter.heading}
         description={frontmatter.description}
         intro={frontmatter.intro}
-        fullImage={frontmatter.full_image}
       />
     </Layout>
   )
@@ -98,13 +95,6 @@ export const GalleryPageQuery = graphql`
             }
           }
         } 
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }

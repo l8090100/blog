@@ -2,7 +2,7 @@
 templateKey: 'gallery-page'
 path: /gallery
 title: gallery show
-image: /img/jungo.jpg
+image: /img/blog1.jpg
 heading: All the artwork is sharing here
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their

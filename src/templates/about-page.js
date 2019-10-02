@@ -52,7 +52,7 @@ export const AboutPageTemplate = ({ image,title, content, contentComponent }) =>
       </div>
     </div>
     <section className="section section--gradient">
-      <div className="container-fluid">
+      <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">

@@ -8,7 +8,7 @@ import uploadfile from '../img/uploadfile-icon.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer bottom-fixed has-background-black has-text-white-ter">
         {/* <div className="content has-text-centered">
           <img
             src={logo}
@@ -48,10 +48,7 @@ const Footer = class extends React.Component {
                         />
                       </a>   
               </div>   
-              <div className="column is-12 ">
-                      <p>l8090100@gmail.com </p> 
-                      <br/>
-              </div>
+
               {/* <div className="column is-1">
                 <section>
                   <ul className="menu-list">

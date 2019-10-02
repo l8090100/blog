@@ -3,14 +3,14 @@ templateKey: 'blog-post'
 title: 'Theatransforemer 01'
 date: 2019-09-23
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: 
 description: >-
 tags:
   - AutoControl
   - C++
   - Qt
 ---
-![chemex](/img/chemex.jpg)
+![chemex](/img/blog1.jpg)
 
 # 劇瘋計畫專案
 ***

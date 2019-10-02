@@ -26,7 +26,7 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="section clearfix">
           <Helmet title={`${tag} | ${title}`} />
             <div className="container">
             <div style={{ marginTop: `2rem` }}>
@@ -36,7 +36,7 @@ class TagRoute extends React.Component {
                 </div> 
                   <div style={{ marginTop: `2rem` }}>  </div>   
                     <ul className="taglist">{postLinks}</ul>
-                  <div style={{ marginBottom: `12rem` }}>  </div> 
+                  <div style={{ marginBottom: `2rem` }}>  </div> 
                     {/* <div className="column is-12">
                   <p className="is-size-5 has-text-centered">
                     <Link to="/tags">All tags</Link>

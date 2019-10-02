@@ -2,7 +2,7 @@
 templateKey: 'about-page'
 path: /about
 title: About Jean
-image: /img/home1.jpg
+image: /img/blog1.jpg
 ---
 ### Education
 
@@ -16,4 +16,4 @@ aprt time jobssssss
 
 eat, work out , alcohol.
 
-
+markdown插入的圖片只能是英文檔名
