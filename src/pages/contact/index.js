@@ -87,6 +87,7 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
+                <div style={{ marginTop: `2.5rem` }}> </div>
                 <div className="field">
                   <label className="label" htmlFor={'message'}>
                     Message

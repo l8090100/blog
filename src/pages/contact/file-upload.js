@@ -94,6 +94,21 @@ export default class Contact extends React.Component {
                     </label>
                   </div>
                 </div>
+                <div style={{ marginTop: `4.5rem` }}> </div>
+                <div className="field">
+                  <label className="label" htmlFor={'message'}>
+                    Message
+                  </label>
+                  <div className="control">
+                    <textarea
+                      className="textarea"
+                      name={'message'}
+                      onChange={this.handleChange}
+                      id={'message'}
+                      required={true}
+                    />
+                  </div>
+                </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
                     Send

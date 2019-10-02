@@ -20,7 +20,7 @@ class TagRoute extends React.Component {
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = ` ${tag} -- ${totalCount} post${
+    const tagHeader = ` ${tag} - ${totalCount} Post${
       totalCount === 1 ? '' : 's' 
     }  `
 
@@ -29,13 +29,14 @@ class TagRoute extends React.Component {
         <section className="section">
           <Helmet title={`${tag} | ${title}`} />
             <div className="container">
-            <div style={{ marginTop: `3rem` }}>
+            <div style={{ marginTop: `2rem` }}>
               <div className="columns is-multiline is-mobile">
-                <div className="column is-auto">
+                <div className="column is-12">
                   <h3 className="title is-size-3 is-bold-light has-text-centered">{tagHeader}</h3>
                 </div> 
-                  <div style={{ marginTop: `4rem` }}>  </div>   
+                  <div style={{ marginTop: `2rem` }}>  </div>   
                     <ul className="taglist">{postLinks}</ul>
+                  <div style={{ marginBottom: `12rem` }}>  </div> 
                     {/* <div className="column is-12">
                   <p className="is-size-5 has-text-centered">
                     <Link to="/tags">All tags</Link>

@@ -31,7 +31,7 @@ class TagCardRoute extends React.Component {
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = ` ${tag} -- ${totalCount} post${
+    const tagHeader = ` ${tag} - ${totalCount} Post${
       totalCount === 1 ? '' : 's' 
     }  `
 
@@ -48,7 +48,7 @@ class TagCardRoute extends React.Component {
                 <div className="column is-12">
                   <div style={{ marginTop: `4rem` }}>  </div>   
                     <ul className="tile">{postLinks}</ul>
-                    </div>
+                </div>
                     {/* <div className="column is-12">
                   <p className="is-size-5 has-text-centered">
                     <Link to="/tags">All tags</Link>
