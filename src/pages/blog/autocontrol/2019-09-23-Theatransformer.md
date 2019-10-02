@@ -30,7 +30,7 @@ tags:
 
 # 系統架構
 + 控制系統電力需求：[單相220V](https://zh.wikipedia.org/wiki/%E5%96%AE%E7%9B%B8%E9%9B%BB)
-+ 驅動器型號：[CSBL740]](http://www.csim.com.tw/CSBL740.html) 
++ 驅動器型號：[CSBL740](http://www.csim.com.tw/CSBL740.html) 
 + 馬達型號：[750W CS80-07C8AE](http://www.csim.com.tw/servo_motor.html)
 + 控制系統：[Qt](https://www.qt.io/)
 + 控制通訊介面：[Serial](https://zh.wikipedia.org/wiki/%E4%B8%B2%E8%A1%8C%E9%80%9A%E4%BF%A1)
