@@ -31,7 +31,7 @@ class TagRoute extends React.Component {
             <div className="container">
             <div style={{ marginTop: `3rem` }}>
               <div className="columns is-multiline is-mobile">
-                <div className="column is-12">
+                <div className="column is-auto">
                   <h3 className="title is-size-3 is-bold-light has-text-centered">{tagHeader}</h3>
                 </div> 
                   <div style={{ marginTop: `4rem` }}>  </div>   

@@ -18,7 +18,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <div>
       {helmet || ''}
        {/* add margin for whole page */}
       <div style={{ marginTop: `4rem` }}>
@@ -52,7 +52,7 @@ export const BlogPostTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

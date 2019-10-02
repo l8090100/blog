@@ -6,7 +6,6 @@ featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 description: >-
 tags:
-  - Desktop APP
   - AutoControl
   - C++
   - Qt
