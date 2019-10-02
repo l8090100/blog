@@ -1,17 +1,17 @@
 ---
 templateKey: 'blog-post'
-title: 'Theatransforemer 募資計畫 01'
+title: 'Theatransforemer 01'
 date: 2019-09-23
-featuredpost: true
-featuredimage: /img/jungo.jpg
+featuredpost: false
+featuredimage: /img/flavor_wheel.jpg
 description: >-
-  整理PLC教具專案的建置過程。
 tags:
   - Desktop APP
   - AutoControl
   - C++
   - Qt
 ---
+![chemex](/img/chemex.jpg)
 
 # 劇瘋計畫專案
 ***
