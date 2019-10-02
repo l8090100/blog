@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import {Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import facebook from '../img/social/facebook.svg'
+import github from '../img/github-icon.svg'
+import contact from '../img/contact-icon.svg'
+import uploadfile from '../img/uploadfile-icon.svg'
 
 export const AboutPageTemplate = ({ image,title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -30,25 +34,45 @@ export const AboutPageTemplate = ({ image,title, content, contentComponent }) =>
         }}
       >
         <h1
-          className=" is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-centered is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
+            color: 'black',
+            lineHeight: '2',
+            padding: '0.2em',
           }}
         >
           {title}
         </h1>
-        <h3
-          className="has-text-weight-light is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h3>
+        <div className="column is-12 has-text-centered ">
+         <Link to="/contact">
+         <img
+             src={contact}
+             alt="contact"
+             style={{ width: '4em', height: '3em' }}
+           />
+         </Link>
+         <Link  to="/contact/file-upload/">
+         <img
+             src={uploadfile}
+             alt="uploadfile"
+             style={{ width: '4em', height: '3em' }}
+           />
+         </Link> 
+         <a title="facebook" href="https://facebook.com/chengchingen">
+           <img
+             src={facebook}
+             alt="Facebook"
+             style={{ width: '4em', height: '3em' }}
+           />
+         </a>
+         <a title="github" href="https://github.com/l8090100">
+           <img
+             src={github}
+             alt="github"
+             style={{ width: '4em', height: '3em' }}
+           />
+         </a>   
+         </div>
       </div>
     </div>
     <section className="section section--gradient">
@@ -57,8 +81,11 @@ export const AboutPageTemplate = ({ image,title, content, contentComponent }) =>
           <div className="column is-10 is-offset-1">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">
-                {title}
+                About Me
               </h2>
+              <h3 className=" has-text-centered is-size-4-mobile is-size-4-tablet is-size-4-widescreen">
+              l8090100@gmail.com
+              </h3>
               <PageContent className="content" content={content} />
             </div>
           </div>

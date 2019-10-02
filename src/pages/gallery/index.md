@@ -3,12 +3,9 @@ templateKey: 'gallery-page'
 path: /gallery
 title: gallery show
 image: /img/blog1.jpg
-heading: All the artwork is sharing here
+heading: Gallery
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Start from engineering to artworks, recording all the projects and things i want to remember.
 intro:
   blurbs:
     - image: /img/gallery-autocontrol.jpg

@@ -32,7 +32,7 @@ class TagRoute extends React.Component {
             <div style={{ marginTop: `2rem` }}>
               <div className="columns is-multiline is-mobile">
                 <div className="column is-12">
-                  <h3 className="title is-size-3 is-bold-light has-text-centered">{tagHeader}</h3>
+                  <h4 className="title has-text-centered">{tagHeader}</h4>
                 </div> 
                   <div style={{ marginTop: `2rem` }}>  </div>   
                     <ul className="taglist">{postLinks}</ul>

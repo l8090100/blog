@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 743.8 743.8"><defs><style>.a{fill:#494949;}.b,.c{fill:none;stroke:#fff;stroke-linecap:round;stroke-width:16px;}.b{stroke-linejoin:round;}.c{stroke-miterlimit:10;}</style></defs><title>uploadfile-icon</title><path class="a" d="M771.9,400c0,205.3-166.6,371.9-371.9,371.9S28.1,605.3,28.1,400,194.7,28.1,400,28.1,771.9,194.7,771.9,400Z" transform="translate(-28.1 -28.1)"/><path class="b" d="M468.2,497.4h88.6a77,77,0,0,0,0-154h-.6a118.26,118.26,0,0,0-228.3-55.7A58.48,58.48,0,0,0,228,329c0,.8.1,1.6.1,2.4a84.42,84.42,0,0,0,22.5,165.8h81.2" transform="translate(-28.1 -28.1)"/><polyline class="c" points="323.2 401.1 371.9 352.4 420.6 401.1"/><line class="c" x1="371.9" y1="547.3" x2="371.9" y2="355.7"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 743.8 743.8" style="enable-background:new 0 0 743.8 743.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<title>uploadfile-icon</title>
+<path class="st0" d="M743.8,371.9c0,205.3-166.6,371.9-371.9,371.9S0,577.2,0,371.9S166.6,0,371.9,0S743.8,166.6,743.8,371.9z"/>
+<path class="st1" d="M303.7,469.1l225,0.2c42.5,0,77-34.5,77-77s-34.5-77-77-77h-0.6c8.2-64.8-37.7-124-102.5-132.2
+	c-54.6-6.9-106.8,24.8-125.8,76.5c-22.8-22.9-59.8-22.9-82.7-0.1c-11,11-17.2,25.9-17.2,41.4c0,0.8,0.1,1.6,0.1,2.4
+	c-44.9,12.4-71.3,58.9-58.9,103.8c10.1,36.6,43.4,62,81.4,62H303.7"/>
+<polyline class="st2" points="323.2,401.1 371.9,352.4 420.6,401.1 "/>
+</svg>

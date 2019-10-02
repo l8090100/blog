@@ -1,19 +1,18 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About Jean
+title: Cheng Ching En
 image: /img/blog1.jpg
 ---
 ### Education
 
-master degreeeeeeeee!!!!!!!!!!!!!!!!!!!!
+master degreeeeeeeee!
 
 ### Work Experience
 
-aprt time jobssssss
+Part time jobs and freelancer.
 
 ### Hobbies
 
-eat, work out , alcohol.
+Enjoy being a human in 21 centry.
 
-markdown插入的圖片只能是英文檔名
