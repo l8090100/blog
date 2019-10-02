@@ -11,17 +11,17 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/home1.jpg
-      title: autocontrol
-    - image: /img/jungo.jpg
-      title: side project
-    - image: /img/home1.jpg
-      title: coding 
-    - image: /img/home1.jpg
-      title: poem
-    - image: /img/jungo.jpg
-      title: cooking
-    - image: /img/home1.jpg
-      title: artwork
+    - image: /img/gallery-autocontrol.jpg
+      title: Auto Control
+    - image: /img/gallery-sideproject.jpg
+      title: Side Project
+    - image: /img/gallery-coding.jpg
+      title: Coding 
+    - image: /img/gallery-poem.jpg
+      title: Poem
+    - image: /img/gallery-cooking.jpg
+      title: Cooking
+    - image: /img/gallery-artwork.jpg
+      title: Artwork
 
   

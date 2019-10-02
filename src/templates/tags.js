@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import { Link } from 'gatsby-plugin-modal-routing'
 import Layout from '../components/Layout'
 
 
@@ -10,7 +11,7 @@ class TagRoute extends React.Component {
     const postLinks = posts.map(post => (
       <div className="column is-full" >
         <li key={post.node.fields.slug}>
-          <Link to={post.node.fields.slug}>
+          <Link to={post.node.fields.slug} asModal>
             <p className="is-size-5">{post.node.frontmatter.title}</p>
           </Link>
         </li>

@@ -8,7 +8,7 @@ description: >-
   整理PLC教具專案的建置過程。
 tags:
   - Desktop APP
-  - Auto Control
+  - AutoControl
   - C++
   - Qt
 ---

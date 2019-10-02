@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import {  graphql, StaticQuery } from 'gatsby'
+import { Link } from 'gatsby-plugin-modal-routing'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogRoll extends React.Component {
@@ -13,22 +14,22 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="column is-4" key={post.id}>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <br />
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-5"
-                      to={post.fields.slug}
+                      className="title has-text-primary  margin-top-2 is-size-5"
+                      to={post.fields.slug} asModal
                     >
+                      {post.frontmatter.featuredimage ? (
+                        <div className="featured-thumbnail">
+                          <PreviewCompatibleImage
+                            imageInfo={{
+                              image: post.frontmatter.featuredimage,
+                              alt: `featured image thumbnail for post ${post.title}`,
+                            }}
+                          />
+                        </div>
+                      ) : null}
+                        <br />
                       {post.frontmatter.title}
                     </Link>             
                   </p>

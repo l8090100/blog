@@ -8,7 +8,6 @@ import { Title } from './item.css';
 
 const Item = ({ title, image }) => (
 <div className="column is-4">
-
     {/* <Link to={`/tags-card/${kebabCase(title)}/`} asModal>   */}
     <Link to={`/tags-card/${kebabCase(title)}/`}>      
       <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />

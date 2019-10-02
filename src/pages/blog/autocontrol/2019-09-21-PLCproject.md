@@ -8,7 +8,7 @@ description: >-
   整理PLC教具專案的建置過程。
 tags:
   - PLC
-  - Auto Control
+  - AutoControl
   - Modbus
 ---
 ![chemex](/img/chemex.jpg)

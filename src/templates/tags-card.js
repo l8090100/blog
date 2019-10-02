@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import { Link } from 'gatsby-plugin-modal-routing'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
@@ -9,8 +10,9 @@ class TagCardRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
-      <div className="column is-full" >
+      <div className="column is-one-third" >
         <article className={`blog-list-item box `}>
+        <Link to={post.node.fields.slug} asModal>
         <div className="featured-thumbnail">
           <PreviewCompatibleImage
             imageInfo={{
@@ -20,10 +22,9 @@ class TagCardRoute extends React.Component {
           />
         </div>
         <li key={post.node.fields.slug}>
-          <Link to={post.node.fields.slug}>
             <p className="is-size-5">{post.node.frontmatter.title}</p>
-          </Link>
         </li>
+        </Link>
         </article>
       </div>
     ))
@@ -39,13 +40,15 @@ class TagCardRoute extends React.Component {
         <section className="section">
           <Helmet title={`${tag} | ${title}`} />
             <div className="container">
-            <div style={{ marginTop: `3rem` }}>
-              <div className="columns is-multiline is-mobile">
+            <div style={{ marginTop: `4rem` }}>
+              <div className="columns is-multiline is-mobile has-text-centered">
                 <div className="column is-12">
-                  <h3 className="title is-size-3 is-bold-light has-text-centered">{tagHeader}</h3>
+                <h3 className="title is-size-3 is-bold-light ">{tagHeader}</h3>
                 </div> 
+                <div className="column is-12">
                   <div style={{ marginTop: `4rem` }}>  </div>   
-                    <ul className="taglist">{postLinks}</ul>
+                    <ul className="tile">{postLinks}</ul>
+                    </div>
                     {/* <div className="column is-12">
                   <p className="is-size-5 has-text-centered">
                     <Link to="/tags">All tags</Link>
