@@ -18,7 +18,7 @@ class BlogRoll extends React.Component {
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary  is-size-5"
-                      to={post.fields.slug} asModal
+                      to={post.fields.slug} 
                     >
                       {post.frontmatter.featuredimage ? (
                         <div className="featured-thumbnail">

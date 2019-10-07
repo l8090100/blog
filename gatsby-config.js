@@ -7,6 +7,13 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-catch-links`,
+      options: {
+        excludePattern: /(excluded-link|external)/,
+      },
+    },
     `gatsby-plugin-modal-routing`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -30,6 +37,7 @@ module.exports = {
         name: 'images',
       },
     },
+   
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
