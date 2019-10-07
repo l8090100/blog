@@ -71,6 +71,8 @@ module.exports = {
               destinationDir: 'static',
             },
           },
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-prismjs"
         ],
       },
     },

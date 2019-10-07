@@ -15,7 +15,8 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="column is-4" key={post.id}>
               <article className={`blog-list-item box `}>
-                  <p className="post-meta">
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                  <div  className="post-meta">
                     <Link
                       className="title has-text-primary  is-size-5"
                       to={post.fields.slug} asModal
@@ -32,7 +33,7 @@ class BlogRoll extends React.Component {
                       ) : null}
                       </Link> 
                       
-                  </p>
+                  </div >
                   <div style={{ marginTop: `0.5rem` }}></div>
                   <div className="container">    
                       <div className="columns  is-mobile">
