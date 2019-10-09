@@ -79,7 +79,17 @@ Modbus TCP是基於TCP/IP的工業通訊協定，常用來和PLC交換資料，�
 16| 寫 多個保持寄存器|
 
 ## 接線
+PLC 有許多的輸入和輸出接點，透過程式設計出各種控制邏輯。X接點為輸入接點，Y接點則為輸出接點，接線前先確認這次專案輸出元件，是共陽還是共陰級的設計。例如這次專案展示的絕對型編碼器就是NPN接線，因此其他的帶燈按鈕也必須使用NPN邏輯和24V電源供應器組成控制電路。輸入模組上的S/S接點接到24V就等於把PLC設定為NPN漏型輸入模式。
+[NPN和PNP差別]
+[NPN接線範例]
+[PNP接線範例]
+PLC和變頻器的通訊線也要自己製作，通訊方式是使用RS485串列通訊RX/TX，用RJ45網路線接頭和網路線製作即可。
+![變頻器通訊接線圖]
+![PLC通訊接線圖]
+變頻器有提供一些外部輸入控制的接點，只要把控制開關街上去就能手動控制變頻器的正反轉。
+![變頻器控制接線圖](https://lh3.googleusercontent.com/uG2DlsdbK_qqq0E_3hgbDgnDzC-VorYlu_JLgOM56X5dXlyVsGM6kNUp2d3CkGVRU0sH72WkOKUMX9Lrj_USYOWkqZiwKIsxFn3r7XpCDqhQp56qqymHXAc5qxoOgq4BYXg8ommGjHc=w1432-h937-no)
 
+電腦和PLC的通訊用一般的網路線即可，每台PLC都有自己的網路IP，在設定網路時要特別注意。
 ## 設置環境
 1.  安裝[GXWork3](https://www.fapro.com.tw/p3-news-detail.asp?nid=121)，撰寫PLC程式。
 2.  完成[PLC的Modbus TCP通訊設定](https://kknews.cc/zh-tw/news/eknnl4q.html)，並[修改PLC的預設IP](http://bbs.gkong.com/archive.aspx?id=455676)。

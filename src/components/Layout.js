@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/Navbar'
 import './all.sass'
+import 'prismjs/themes/prism-solarizedlight.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
