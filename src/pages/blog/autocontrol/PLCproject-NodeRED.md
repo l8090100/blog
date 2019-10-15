@@ -28,14 +28,25 @@ Node-RED是IBM基於Node.js開發的視覺化物聯網開發工具，它可以�
 2.  輸入`node-red`
 3.  打開瀏覽器並輸入`http://127.0.0.1:1880/`
 4.  點畫面右上角選單 > `import` > `clipboard` > 上傳`flow.json`檔案
-5.  修改PLC的IP
-6.  設定PLC端Modbus模組與IP
-7.  確認NodeRED端Modbus伺服器的IP設定
-8.  可以開始使用外掛的模組和PLC通訊
+5.  PLC端也要設定IP和Modbus，到 `GXwork3` > `Navigation` > `Parameter` > `FX5UCPU`>`Module Parameter` > `Ethernet port`設定。  
 
 ![PLC端Modbus通訊設定](https://lh3.googleusercontent.com/Ogp3DxDB7HzfaQCLIzkOb0h3MXrlItPOWECgkuYmW9YTycZYxcv4yWHv4cXW6yxRJUT5a2qmlHGLJgRqfncyPym9qUs9baHkuTlm8hcvPZKuHnj3rIt5sMLblBE1sKTUgKXxnJECWFU=w493-h315-no)
 
-![NodeRED端Modbus通訊設定](https://lh3.googleusercontent.com/sy8V3Drun7ioKcZ4omhj1NBXdFjkEwWCQP4vKtNo3itIOkF2CdYob5CaEjy6LLSGhd0AvH4nJ8Uf9rF5KjJBhvxtIzSMSMMegvXLnHvx39Xsd9uU6eycaEUFKtFOwGPzSqaVme67xvk=w620-h648-no)
+1.  確認NodeRED端Modbus伺服器的IP設定
+
+![NodeRED端Modbus通訊設定](https://lh3.googleusercontent.com/sy8V3Drun7ioKcZ4omhj1NBXdFjkEwWCQP4vKtNo3itIOkF2CdYob5CaEjy6LLSGhd0AvH4nJ8Uf9rF5KjJBhvxtIzSMSMMegvXLnHvx39Xsd9uU6eycaEUFKtFOwGPzSqaVme67xvk=w620-h648-no)  
+
+2.  可以開始使用外掛的模組和PLC通訊
+
+Modbus協定有許多不同功能碼來讀寫PLC的不同資料，以下是常用的功能碼，此專案用到01,03,05,06,15。
+
+
++ 01：讀 線圈寄存器 > 起始位置 8192 = M0
++ 03：讀 保持寄存器 > 起始位置 0 = D0
++ 05：寫 單個線圈寄存器 > 起始位置 8192 = M0
++ 06：寫 單個保持寄存器 > 起始位置 0 = D0
++ 15：寫 多個線圈寄存器 > 起始位置 8192 = M0
+
 
 ##  自訂功能函式
 Node-RED撰寫程式的方式主要靠介面左邊的函示庫，只要把功能拉近程式區就能組合出各種應用。以下以最通用的function示範，並列出此專案使用到的自定函式。
