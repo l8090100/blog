@@ -11,7 +11,8 @@ class TagCardRoute extends React.Component {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
       <div className="column is-one-third" >
-        <article className={`blog-list-item box `}>
+          <div style={{ marginTop: `1rem` }}></div>
+        <article className={`blog-list-item `}>
         <Link to={post.node.fields.slug} asModal>
         <div className="featured-thumbnail">
           <PreviewCompatibleImage
@@ -21,9 +22,8 @@ class TagCardRoute extends React.Component {
             }}
           />
         </div>
-        <li key={post.node.fields.slug}>
-            <p className="is-size-5">{post.node.frontmatter.title}</p>
-        </li>
+        <div style={{ marginTop: `1rem` }}></div>
+        <p className="is-size-5">{post.node.frontmatter.title}</p>
         </Link>
         </article>
       </div>
@@ -41,19 +41,11 @@ class TagCardRoute extends React.Component {
           <Helmet title={`${tag} | ${title}`} />
             <div className="container">
             <div style={{ marginTop: `4rem` }}>
-              <div className="columns is-multiline is-mobile has-text-centered">
-                <div className="column is-12">
+              <div className="columns is-multiline  has-text-centered">
+              <div className="column is-12" >
                 <h3 className="title is-size-3 is-bold-light ">{tagHeader}</h3>
-                </div> 
-                <div className="column is-12">
-                  <div style={{ marginTop: `4rem` }}>  </div>   
-                    <ul className="tile">{postLinks}</ul>
-                </div>
-                    {/* <div className="column is-12">
-                  <p className="is-size-5 has-text-centered">
-                    <Link to="/tags">All tags</Link>
-                  </p>
-                  </div> */}
+              </div>
+                    {postLinks}
               </div>
             </div>
           </div>
