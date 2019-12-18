@@ -33,19 +33,7 @@ tags:
 
 ![變頻器控制接線完成圖](https://lh3.googleusercontent.com/uG2DlsdbK_qqq0E_3hgbDgnDzC-VorYlu_JLgOM56X5dXlyVsGM6kNUp2d3CkGVRU0sH72WkOKUMX9Lrj_USYOWkqZiwKIsxFn3r7XpCDqhQp56qqymHXAc5qxoOgq4BYXg8ommGjHc=w1432-h937-no)  
 
-#### 變頻器和PLC通訊
-PLC和變頻器的通訊線也要自己製作，通訊方式是使用RS485串列通訊RX/TX，用RJ45網路線接頭和網路線製作即可。  
 
-![變頻器通訊接線圖](https://lh3.googleusercontent.com/sB5g8vLoQ_BFEHvZOxQ-MeVtQGaiKKlPr8xQvxBjiEDNbWbtvtwbIGJ-1M9XLJJzu8yfxC7liWXMdr3qym5rURLOHsSiwM9bPmd_arxh2BU17lREkmp-p6jZAoIOox8AGuhWo4ISKns=w1389-h670-no)
-
-PLC端的通訊接頭也要照說明書配線，在沒有分配器的情況下只要如圖接線就可以通訊成功。  
-
-![PLC通訊接線圖](https://lh3.googleusercontent.com/efNVNgAnPLiAByx1eW45YLhGKhZqtGxb9LwEPrILdVRVDishXqVyMDjYgEsZ_WIRfKOOrfKB5qCLn0zQRTx_OkQfEzRIdx6r2qgb0GBKcc0JfzSwcn9ZwkwOB5epw22fKIaxTwVZECk=w918-h559-no)  
-
-PLC端設定MODBUS，到 `GXwork3` > `Navigation` > `Parameter` > `FX5UCPU`>`Module Parameter` > `485 serial port`如圖設置即可。
-設定完成後就可在PLC內寫程式，利用變頻器指令控制正反轉、頻率、停止和運行模式等。
-
-![PLC端通訊設定](https://lh3.googleusercontent.com/Hpob3K1BmHI7jMF1l7MiVIES2ZljhCRmJFhoI-D9CbyCy8-6a9bXKJperfrMdWL2SHYltJeDNdMYqkhDKzvXrzHOZ0nQN0vSLUTHKTtTBQlZmqItqgnNAwSn2eOZ0VPHxrfCjO4mhk8=w490-h169-no)
 
 
 
