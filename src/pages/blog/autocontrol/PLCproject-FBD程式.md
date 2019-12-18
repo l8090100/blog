@@ -72,5 +72,4 @@ PLC最常用的編程語言叫做階梯圖，除了歷史悠久外學習資源�
 2.  利用PLC內建功能，實現按同一個按鈕顯示兩種不同亮燈效果。
 
   
-  
 ![表演模式按鈕狀態判斷](https://lh3.googleusercontent.com/nX11ejp6e1B9aubw2HgPgUk4KjS_bU_f3-g1v884k9Vn4pa0-d41i6JArUSad1Q_0bcUiJAQwmeFoqy5cYkDtm0P1tBe5fNPFoM3zZDcOGN5G7mx2iwfhQPeVCGf2NfWZ-YwPZP0b9Y=w1444-h462-no)

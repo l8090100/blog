@@ -70,8 +70,8 @@ return m;
 ![解陣列封包程式](https://lh3.googleusercontent.com/n6hDayzhOh_QdU5qzkbaGTP-uxVwCV1-ODPeiR4d1BAe9ij2fD1QbtdmcFre56gF5pdBDWCXoeQ7l5C0JkTy4a0HIAY6hjG6jVwVLR-nKbpn4qahgj8h7eqVMq5g3SeLLYLhnLxPxFg=w1392-h726-no)
 
 
-### 讀變頻器狀態程式
-#### 判斷手自動模式
+### 讀變頻器狀態程式並判斷手自動模式
+
 從PLC讀到手自動的0/1訊號後，透過這段程式將手動/自動的訊息顯示在監控介面上。
 ``` javascript
 var s = "default";
@@ -85,7 +85,7 @@ return msg;
 ``` 
 ![讀變頻器狀態程式](https://lh3.googleusercontent.com/GyocGu59ZtIkIcB95j4Jx_3TetVaJ78rEwejmdxQqCjGfE9HWVeaLEBR6DvvHhL9qBQSmqHlpgfsqKw0IEKgudZE_dBKfTcsuPa0ChKO0WIDelgP52LCEk_B2W5YpGdf5gWVDY4SL_U=w1108-h486-no)
 
-#### 計算秒速
+### 計算秒速
 ``` javascript
 context.radius = context.radius || 0;
 
@@ -98,12 +98,12 @@ msg.payload = parseFloat(r);
 return msg;
 ```
 
-#### 定位控制馬達程式
+### 定位控制馬達程式
 由程式可以看到定點A~D按鈕共同連接到一個寫入函式，而下面的頻率卻是分別寫入。這個寫法前提是，定點訊號一次只能設定一個，如果連續按到不同定點的話，會造成PLC判斷錯誤，因此定點A其實是送出`1,0,0,0`給PLC，以此類推，這樣便能確保PLC端永遠只接收到一個定位指令。  
 
 ![定位控制馬達程式](https://lh3.googleusercontent.com/ZdoUzo2cGZaI7tGH-q5eu-_pZH1Q-_VjB5zGnttESEh4Zn7oJkxIw0tjuAI_hivxsghd9983ckJnu6sTOPIh_B3YyMnXPms2jnwfsJtMxQzoMA7RR3njnEoc_tgt2vBEBGaPZ__SjDg=w1169-h489-no)
 
-#### 介面控制馬達程式
+### 介面控制馬達程式
 介面控制馬達正反轉的邏輯與定位控制相似，為了避免PLC同時接受到正轉和反轉的訊號造成動作錯誤，用正轉送出`1,0,0`，反轉送出`0,1,0`的寫法方便PLC判斷，避免誤動作。  
 
 ![介面控制馬達程式](https://lh3.googleusercontent.com/duyPHxpVJDWDY0_zJWWcWBD8K8r-Txf9YJ1GRd8FGvwfNFw8QmrL1hhsPYb9hPibXWC1iGwC42YYko_TFBr14qXKXkjtPyPL9Tx1rGfDtzos7qgWYmi3dy3YnQJrh-3Fj_Vf6S5xVRU=w1152-h283-no)

@@ -1,20 +1,21 @@
 ---
 templateKey: 'blog-post'
-title: 'PLC project 01'
+title: 'PLC project 統整篇'
 date: 2019-09-21
 featuredpost: false
 featuredimage: 
 description: >-
-  整理PLC教具專案的建置過程。
+  整理PLC變頻器教具專題的建置過程。
 tags:
   - PLC
   - AutoControl
   - Modbus
 ---
-![chemex](/img/blog1.jpg)
 
-# PLC教具專案
+# PLC變頻器教具專題
 ***
+`youtube: https://youtu.be/Sni6lzrG7zM`
+
 - [系統架構](#系統架構)
   - [電力](#電力)
   - [PLC控制主機](#PLC控制主機)
@@ -83,6 +84,3 @@ Modbus TCP是基於TCP/IP的工業通訊協定，常用來和PLC交換資料，�
 8.  確認橘色圖塊下面的小字為綠點加上`Active`
 9.  網址列輸入 `127.0.0.1:1880/ui`後即可看到控制介面
 10. 開始控制馬達。
-11. 
-
-

@@ -11,7 +11,7 @@ tags:
   - AutoControl
 ---
 
-#### PLC 控制系統規劃
+### PLC 控制系統規劃
 PLC 又叫做「可程式邏輯控制器」，設計有許多的輸入和輸出接點，透過設計專用程式，就能實現各種控制邏輯。接線前先確認這次專案輸出元件，是共陽還是共陰級的設計。  
 
 1.  [EC6P-AG5C](https://www.omron.com.tw/products/family/494/lineup.html)絕對型編碼器：為NPN型，PLC的控制迴路也必須為NPN型才能讀到編碼器的編碼訊號。
@@ -34,10 +34,11 @@ PLC 又叫做「可程式邏輯控制器」，設計有許多的輸入和輸出�
 
 X接點為輸入接點，Y接點則為輸出接點，輸入模組上的S/S接點接到24V就等於把PLC設定為NPN漏型輸入模式。
 ![PLC端接線圖](https://lh3.googleusercontent.com/5FO24ezXBS192bq8Wh2bKN4eTsvX4jUDltVKtNMAiNFeKZgLkPnbuAV3chzCR9aGTUXtlSmrvf0fyKCxJngQQ2R3QVPhuPoFmuRI5of5A8sKakz4BGN37wgrKhS4iUlGv3aHwoTgD7k=w960-h720-no)  
-#### 編碼器
+
+### 編碼器
 [EC6P-AG5C](https://www.omron.com.tw/products/family/494/lineup.html)絕對型編碼器為NPN型，PLC的控制迴路也必須為NPN型才能讀到編碼器的編碼訊號。
 
-#### 變頻器和PLC通訊
+### 變頻器和PLC通訊
 PLC和變頻器的通訊線也要自己製作，通訊方式是使用RS485串列通訊RX/TX，用RJ45網路線接頭和網路線製作即可。  
 
 ![變頻器通訊接線圖](https://lh3.googleusercontent.com/sB5g8vLoQ_BFEHvZOxQ-MeVtQGaiKKlPr8xQvxBjiEDNbWbtvtwbIGJ-1M9XLJJzu8yfxC7liWXMdr3qym5rURLOHsSiwM9bPmd_arxh2BU17lREkmp-p6jZAoIOox8AGuhWo4ISKns=w1389-h670-no)
